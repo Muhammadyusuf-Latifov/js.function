@@ -1,0 +1,101 @@
+.room {
+  background: #fbf8f5;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  .room__wrapper {
+    h2 {
+      font-size: 48px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .room__card__wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      //   card 1
+      .room__card {
+        border: 3px solid $bg-primary;
+        border-radius: 4px;
+        box-shadow: 10px 10px 1px #cbc6f4;
+        transition: 0.3s;
+      }
+      .room__card:hover {
+        box-shadow: 10px 10px 10px #cbc6f4;
+        transform: scale(1.009);
+      }
+      //   card 2
+      .room__card2 {
+        border: 3px solid #225dca;
+        border-radius: 4px;
+        transition: 0.3s;
+        box-shadow: 10px 10px 1px #e7cb43;
+      }
+      .room__card2:hover {
+        transform: scale(1.009);
+        box-shadow: 10px 10px 10px #e7cb43;
+      }
+      // card 3
+      .room__card3 {
+        border: 3px solid #242947;
+        border-radius: 4px;
+        transition: 0.3s;
+        box-shadow: 10px 10px 1px #a2d4c5;
+      }
+      .room__card3:hover {
+        transform: scale(1.009);
+        box-shadow: 10px 10px 10px #a2d4c5;
+      }
+      //  card 4
+      .room__card4 {
+        border: 3px solid #de4333;
+        border-radius: 4px;
+        transition: 0.3s;
+        box-shadow: 10px 10px 1px #af4920;
+      }
+      .room__card4:hover {
+        transform: scale(1.009);
+        box-shadow: 10px 10px 10px #af4920;
+      }
+
+      .roomC__img {
+        text-align: center;
+        margin-bottom: 15px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .roomC__body {
+        text-align: center;
+        h4 {
+          font-size: 17px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .room {
+    .room__wrapper {
+      .room__card__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  .room {
+    .room__wrapper {
+      .room__card__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

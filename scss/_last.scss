@@ -1,0 +1,33 @@
+.last {
+  padding: 120px 0;
+  background: #fbf8f5;
+}
+
+.last__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  .last__img {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    width: 290px;
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .last__btn {
+    padding: 16px 40px;
+    border-radius: 88px;
+    border: 1.5px solid $bg-primary;
+    background: $bg-primary;
+    transition: 0.3s;
+  }
+  .last__btn:hover {
+    background: #fff;
+  }
+}
