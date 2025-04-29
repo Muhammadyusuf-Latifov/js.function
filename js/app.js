@@ -67,7 +67,7 @@
   //    m - 8
   //   function teskari(soz) {
   //     let teskariIsm = "";
-  //     for (let i = soz.length - 1; i >= 0; i--) {
+  //     for (let i = soz.length ; i >= 0; i--) {
   //       teskariIsm += soz[i];
   //     }
   //     return teskariIsm;
